@@ -1,0 +1,8 @@
+#include <iostream>
+#include namespece std;
+
+int main() 
+{
+    cout << "Hello, World!";
+    return 0;
+}
