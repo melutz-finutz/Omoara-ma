@@ -49,19 +49,6 @@ int main() {
     cout << "Guess the word: " << guessedWord << endl;
     
     while (attempts > 0 && guessedWord != originalWord) {
-        // Clear screen
-        system("cls");
-        
-        // Display hangman stage
-        cout << RED << hangmanStages[6 - attempts] << RESET << endl;
-        
-        cout << YELLOW << "Attempts left: " << attempts << RESET << endl;
-        cout << BLUE << "Guessed letters: ";
-        for (char c : guessedLetters) cout << c << " ";
-        cout << RESET << endl;
-        
-        cout << "Word: " << guessedWord << endl;
-        
         char guess;
         cout << MAGENTA << "Enter a letter: " << RESET;
         cin >> guess;
